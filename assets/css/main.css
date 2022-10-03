@@ -1638,6 +1638,16 @@ span {
   width: 100%;
 }
 
+.carousel-inner 
+{
+	text-shadow: none;
+	
+}
+.carousel-caption
+{
+	opacity: 75%;
+}
+
 /* Slider */
 .slider {
     overflow-x: hidden;
@@ -1792,6 +1802,33 @@ span {
     color: #ddd;
 }	
 
+/* Circular */
+
+.circular--landscape { 
+	display: inline-block; 
+	position: relative;
+	width: 	200px;
+	height: 200px; 
+	overflow: hidden; 
+	border-radius: 50%; } 
+
+	
+.circular--landscape img { 
+	width: auto; 
+	height: 100%; 
+	margin-left: -50px; }
+
+.circular--square { 
+	border-top-left-radius: 50% 50%; 
+	border-top-right-radius: 50% 50%; 
+	border-bottom-right-radius: 50% 50%; 
+	border-bottom-left-radius: 50% 50%;
+ }
+ .circular--square
+  { border-radius: 50%; }
+
+
+
 /* Image */
 
 	.image {
@@ -1802,11 +1839,13 @@ span {
 		.image img {
 			display: block;
 			width: 100%;
+
 		}
 
 		.image.fit {
 			display: block;
 			width: 100%;
+
 		}
 
 		.image.featured {
