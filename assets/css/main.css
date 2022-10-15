@@ -76,6 +76,11 @@ span {
 	white-space: pre-wrap;
 	padding-right: 10px;
   }
+span1 {
+	background-color:transparent;
+	white-space: pre-wrap;
+	padding-right: 10px;
+  }
 
 /* Basic */
 
@@ -1617,8 +1622,79 @@ span {
 				color: #fff;
 			}
 
-/* close */
+/* lang */
 
+/*Toogle*/ 
+  .menu-btn__wrapper {
+	position: absolute;
+	top: 12px;
+	right: 20px;
+  }
+  
+  .menu-btn {
+	width: 50px;
+	height: 50px;
+	display: block;
+	background-color: transparent;
+	border-radius: 50%;
+	position: relative;
+  }
+  
+  .menu-block {
+	display: flex;
+	flex-direction: column-reverse;
+  }
+  
+  .menu-nav {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	transition: .5s;
+	transform-origin: top center;
+	transform: scaleY(0) translateY(-20px);
+	opacity: 0;
+  }
+  .menu-nav.with-border {
+	background-color: transparent;
+	padding-bottom: 20px;
+	padding-top: 30px;
+	margin-top: 0px;
+	border-radius: 50px;
+  }
+  .menu-nav--open {
+	transform: scaleY(1) translateY(0);
+	opacity: 1;
+  }
+  .menu-nav__name {
+	position: absolute;
+	right: 45px;
+	top: 0;
+	margin: 0;
+	opacity: 0;
+	transition: .3s;
+  }
+  .menu-nav__name img {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+  }
+  .menu-nav__link {
+	display: inline-block;
+	color: transparent;
+	margin-top: 5px;
+	transition: .2s;
+	position: relative;
+  }
+  
+  .menu-nav__img {
+	width: 35px;
+	height: 35px;
+	display: flex;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 10%;
+  }
 
 /* Section/Article */
 

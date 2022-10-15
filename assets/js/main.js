@@ -32,6 +32,20 @@
 		});
 
 	//slider
+	$(document).on('click', function (e) {
+		if ($(e.target).closest(".menu-btn").length === 0) {
+			$('.menu-nav').removeClass('menu-nav--open');
+		}
+	});
 	
+	$('.menu-btn').on('click', function(e){
+		e.preventDefault();
+		$(this).toggleClass('menu-btn--open');
+		$('.menu-nav').toggleClass('menu-nav--open');
+	});
+	
+	$('.menu-nav__link').on('click', function(e){
+	  $("#main-btn-img").attr('src', $(this).find('img').attr('src'));
+	});
 
 })(jQuery);
