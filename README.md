@@ -1,4 +1,4 @@
-<!-- PROJECT LOGO -->
+<!-- PROJECT LOGO DETAILS-->
 <br />
 <p align="center">
   <h1 align="center">My Portfolio ✨</h1>
