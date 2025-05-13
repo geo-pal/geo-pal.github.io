@@ -1710,6 +1710,7 @@ span {
 	}
 /* carousel */
 .carousel img {
+  max-height: 500px;
   width: 100%;
 }
 
@@ -1721,6 +1722,12 @@ span {
 .carousel-caption
 {
 	opacity: 75%;
+}
+.carousel-item {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Slider */
@@ -2244,7 +2251,7 @@ span {
 			left: 2em;
 			top: 2em;
 			margin: -4em 0 4em -4em;
-			width: auto;			
+			width: auto;	
 		}		
 		
 /* Icons */
